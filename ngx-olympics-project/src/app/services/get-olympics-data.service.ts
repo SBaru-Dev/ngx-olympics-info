@@ -9,10 +9,8 @@ export class GetOlympicsDataService {
   constructor(private httpClient: HttpClient) { }
 
   public getOlympicsData() {
-    String url = '';
-    this.httpClient.post(() => {
-
-    })
+    const url = 'http://localhost:8000/countries';
+    return this.httpClient.get(url);
+    }
     
   }
-}
