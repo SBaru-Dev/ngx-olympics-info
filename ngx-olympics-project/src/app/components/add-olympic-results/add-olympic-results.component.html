@@ -1,0 +1,51 @@
+<div class="add-result-form example-container pull-left">
+    <form [formGroup]="addResultForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <mat-label>
+                Country Name
+            </mat-label>
+            <input placeHolder="Enter Country Name" matInput formControlName="countryName" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Rank
+            </mat-label>
+            <input placeHolder="Enter Rank" matInput formControlName="rank" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Participants
+            </mat-label>
+            <input placeHolder="Enter Number of Participants" matInput formControlName="participants" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Gold Medal
+            </mat-label>
+            <input placeHolder="Enter Number of Gold Medal" matInput formControlName="goldMedal" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Silver Medal
+            </mat-label>
+            <input placeHolder="Enter Number of Silver Medal" matInput formControlName="silverMedal" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Bronze Medal
+            </mat-label>
+            <input placeHolder="Enter Number of Bronze Medal"  matInput formControlName="bronzeMedal" required>
+        </mat-form-field>
+
+        <div>
+            <button mat-raised-button color="primary"> OK</button>
+            <button mat-button (click)="back()"> Back to Dashboard </button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,16 @@
+.add-result-form {
+    width: 100%;
+    height: fit-content;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+
+
+.pull-left {
+    float: left;
+    margin-top: 50px;
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }

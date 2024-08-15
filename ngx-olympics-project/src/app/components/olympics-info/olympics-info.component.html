@@ -1,1 +1,57 @@
-<p>olympics-info works!</p>
+<div>
+  <h2 class="title-align"> Welcome to Olympics Dashboard</h2>
+</div>
+
+<div class="olympic-info-container mat-elevation-z8">
+    <table mat-table [dataSource]="olympicDataSource" matSort #datasort="matSort">
+      <ng-container matColumnDef="countryName">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Country Name</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.countryName}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Rank</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.id}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="participants">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Participants</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.participants}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="goldMedal">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Gold Medals</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.goldMedal}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="silverMedal">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Silver Medals</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.silverMedal}}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="bronzeMedal">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Bronze Medals</th>
+        <td mat-cell *matCellDef = "let element">
+          {{element.bronzeMedal}}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row class="mat-sort-header-column" *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>    
+  </div>
+
+  <div>
+    <button type="button" (click)="onButtonClick()">View Pictorial Representation</button>
+    <button type="button" (click)="onAddResult()">Add New Result</button>
+  </div>

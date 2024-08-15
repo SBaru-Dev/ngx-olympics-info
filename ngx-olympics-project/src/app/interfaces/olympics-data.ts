@@ -1,6 +1,11 @@
 export interface OlympicsData {
-    id: string;
-    name: string;
-    progress: string;
-    color: string;
-  }
+  countries: Country[]
+} 
+
+export interface Country {
+  countryName: string
+  participants: number
+  goldMedal: number
+  silverMedal: number
+  bronzeMedal: number
+}
