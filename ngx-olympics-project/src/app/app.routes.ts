@@ -5,6 +5,10 @@ import { AddOlympicResultsComponent } from './components/add-olympic-results/add
 
 export const routes: Route[] = [
     {
+        path: '',
+        component: OlympicsInfoComponent
+    },
+    {
         path: 'dashboard',
         component: OlympicsInfoComponent
     },
