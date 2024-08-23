@@ -1,0 +1,44 @@
+{
+  "countries": [
+  {
+      "countryName": "United States",
+      "id": 1,
+      "participants": 613,
+      "goldMedal": 39,
+      "silverMedal": 41,
+      "bronzeMedal": 33
+  },
+  {
+      "countryName": "Japan",
+      "id": 2,
+      "participants": 582,
+      "goldMedal": 27,
+      "silverMedal": 14,
+      "bronzeMedal": 17
+  },
+  {
+      "countryName": "Australia",
+      "id": 3,
+      "participants": 472,
+      "goldMedal": 17,
+      "silverMedal": 7,
+      "bronzeMedal": 22
+  },
+  {
+      "countryName": "ROC",
+      "id": 4,
+      "participants": 335,
+      "goldMedal": 20,
+      "silverMedal": 28,
+      "bronzeMedal": 23
+  },
+  {
+      "countryName": "China",
+      "id": 5,
+      "participants": 406,
+      "goldMedal": 38,
+      "silverMedal": 32,
+      "bronzeMedal": 18
+  }
+]
+}

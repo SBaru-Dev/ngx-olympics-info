@@ -1,44 +1,50 @@
 {
-  "countries": [
-  {
-      "countryName": "United States",
-      "id": 1,
-      "participants": 613,
-      "goldMedal": 39,
-      "silverMedal": 41,
-      "bronzeMedal": 33
-  },
-  {
-      "countryName": "Japan",
-      "id": 2,
-      "participants": 582,
-      "goldMedal": 27,
-      "silverMedal": 14,
-      "bronzeMedal": 17
-  },
-  {
-      "countryName": "Australia",
-      "id": 3,
-      "participants": 472,
-      "goldMedal": 17,
-      "silverMedal": 7,
-      "bronzeMedal": 22
-  },
-  {
-      "countryName": "ROC",
-      "id": 4,
-      "participants": 335,
-      "goldMedal": 20,
-      "silverMedal": 28,
-      "bronzeMedal": 23
-  },
-  {
-      "countryName": "China",
-      "id": 5,
-      "participants": 406,
-      "goldMedal": 38,
-      "silverMedal": 32,
-      "bronzeMedal": 18
+    "countries": [
+      {
+        "name": "United States",
+        "participants": 613,
+        "medals": {
+          "gold": 39,
+          "silver": 41,
+          "bronze": 33
+        }
+      },
+      {
+        "name": "Japan",
+        "participants": 582,
+        "medals": {
+          "gold": 27,
+          "silver": 14,
+          "bronze": 17
+        }
+      },
+      {
+        "name": "Australia",
+        "participants": 472,
+        "medals": {
+          "gold": 17,
+          "silver": 7,
+          "bronze": 22
+        }
+      },
+      {
+        "name": "ROC (Russian Olympic Committee)",
+        "participants": 335,
+        "medals": {
+          "gold": 20,
+          "silver": 28,
+          "bronze": 23
+        }
+      },
+      {
+        "name": "China",
+        "participants": 406,
+        "medals": {
+          "gold": 38,
+          "silver": 32,
+          "bronze": 18
+        }
+      }
+    ]
   }
-]
-}
+  
