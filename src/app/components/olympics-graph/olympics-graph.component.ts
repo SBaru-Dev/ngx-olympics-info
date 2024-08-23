@@ -1,8 +1,8 @@
-import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
-import { GetOlympicsDataService } from '../../services/get-olympics-data.service';
+import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { each as _each } from 'lodash';
 import { MaterialComponentsModule } from '../../material-components/material-components.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-olympics-graph',
@@ -41,7 +41,7 @@ export class OlympicsGraphComponent implements OnInit {
   };
 
   
-  constructor(private getOlympicSvc: GetOlympicsDataService) {
+  constructor(private _router: Router) {
 
    }
 
@@ -59,5 +59,9 @@ export class OlympicsGraphComponent implements OnInit {
 
   onSelect(e: any) {
     console.log(e);
+  }
+
+  backToDashboard() {
+    this._router.navigateByUrl('/dashboard')
   }
 }

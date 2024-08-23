@@ -98,7 +98,6 @@ import { MatTreeModule } from '@angular/material/tree';
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
-    MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
