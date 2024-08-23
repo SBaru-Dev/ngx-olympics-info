@@ -8,8 +8,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-add-olympic-results',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, MaterialComponentsModule
-  ],
+  imports: [ReactiveFormsModule, CommonModule, MaterialComponentsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './add-olympic-results.component.html',
